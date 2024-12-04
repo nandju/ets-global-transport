@@ -10,7 +10,7 @@ export default function Advantage(){
                 </button>
             </div>
             
-            <div className="flex flex-row gap-6 mt-4 items-start">
+            <div className="flex flex-row gap-6 mt-4 items-stretch">
                 {/* Article principal à gauche */}
                 <div className="flex-1">
                     <div className="bg-white rounded-xl shadow-lg">
@@ -36,8 +36,8 @@ export default function Advantage(){
                 </div>
 
                 {/* Articles secondaires à droite */}
-                <div className="flex-1">
-                    <div className="grid grid-cols-1 gap-4">
+                <div className="flex-1 relative">
+                    <div className="grid grid-cols-1 h-full gap-4 place-items-stretch">
                         {/* Article 1 */}
                         <div className="bg-white rounded-xl shadow-lg p-4 flex gap-4">
                             <div className="w-1/3">
