@@ -3,175 +3,76 @@ import Image from "next/image";
 
 export default function TransportItems() {
     return (
-        <div className="bg-gray-200">
-            <div className="container mx-auto px-4 py-12 space-y-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="bg-white rounded-lg overflow-hidden shadow-lg relative">
-                        <div className="relative h-48">
-                            <Image
-                                src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg"
-                                alt="Camion Benne"
-                                width={400}
-                                height={300}
-                                className="object-cover w-full h-full"
-                                unoptimized
-                            />
-                        </div>
-                        <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-3">
-                                Camion Benne 3.5T
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                Location de camion benne idéal pour vos travaux.
-                            </p>
-                            <Link href="#" className="inline-flex items-center bg-blue-600 text-white p-3 rounded-3xl hover:bg-blue-800">
-                                LIRE PLUS
-                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <div className="relative h-48">
-                            <Image
-                                src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg"
-                                alt="Camion Plateau"
-                                width={400}
-                                height={300}
-                                className="object-cover w-full h-full"
-                                unoptimized
-                            />
-                        </div>
-                        <div className="p-6">
-                            
-                            <h3 className="text-xl font-semibold mb-3">
-                                Camion Plateau 3.5T
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                Location de camion plateau pour transport de matériaux.
-                            </p>
-                            <Link href="#" className="inline-flex items-center bg-blue-600 text-white p-3 rounded-3xl hover:bg-blue-800">
-                                LIRE PLUS
-                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <div className="relative h-48">
-                            <Image
-                                src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg"
-                                alt="Camion Frigorifique"
-                                width={400}
-                                height={300}
-                                className="object-cover w-full h-full"
-                                unoptimized
-                            />
-                        </div>
-                        <div className="p-6">
-                            
-                            <h3 className="text-xl font-semibold mb-3">
-                                Camion Frigorifique
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                Location de camion frigorifique pour vos produits frais.
-                            </p>
-                            <Link href="#" className="inline-flex items-center bg-blue-600 text-white p-3 rounded-3xl hover:bg-blue-800">
-                                LIRE PLUS
-                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </Link>
-                        </div>
+        <div className="flex flex-col gap-6 bg-gray-200">
+            <div className="flex flex-row justify-between bg-gray-400 items-center m-3">
+                <img src="https://i.pinimg.com/736x/69/e4/68/69e468c3b656a8711a1e381a786885d8.jpg" alt="transportpicture" className="w-1/2"/>
+                <div className="flex flex-col justify-start items-start p-6">
+                    <div className="text-2xl font-bold">Transport national et régional</div>
+                    <div className="text-sm">Couverture de la Côte d’Ivoire et des pays voisins pour permettre une plus grande flexibilité dans la livraison des marchandises.</div>
+                    <div>
+                        <Link href="/transport-marchandises">
+                            <button className="bg-black text-white px-4 py-2 rounded-lg">Je souhaite une estimation</button>
+                        </Link>
                     </div>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <div className="relative h-48">
-                            <Image
-                                src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg"
-                                alt="Camion Benne"
-                                width={400}
-                                height={300}
-                                className="object-cover w-full h-full"
-                                unoptimized
-                            />
-                        </div>
-                        <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-3">
-                                Camion Benne 3.5T
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                Location de camion benne idéal pour vos travaux.
-                            </p>
-                            <Link href="#" className="inline-flex items-center bg-blue-600 text-white p-3 rounded-3xl hover:bg-blue-800">
-                                LIRE PLUS
-                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </Link>
-                        </div>
+            </div>
+            <div className="flex flex-row-reverse justify-between bg-gray-400 items-center m-3">
+                <img src="https://i.pinimg.com/736x/c2/09/8b/c2098bbe658dd4d3ffea9133f4b6ec10.jpg" alt="transportpicture" className="w-1/2"/>
+                <div className="flex flex-col justify-start items-start p-6">
+                    <div className="text-2xl font-bold">Transport express </div>
+                    <div className="text-sm">Solution dédiée aux marchandises nécessitant une livraison rapide, idéale pour les produits frais ou les marchandises à haute valeur ajoutée</div>
+                    <div>
+                        <Link href="/transport-marchandises">
+                            <button className="bg-black text-white px-4 py-2 rounded-lg">Je souhaite une estimation</button>
+                        </Link>
                     </div>
-
-                    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <div className="relative h-48">
-                            <Image
-                                src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg"
-                                alt="Camion Plateau"
-                                width={400}
-                                height={300}
-                                className="object-cover w-full h-full"
-                                unoptimized
-                            />
-                        </div>
-                        <div className="p-6">
-                            
-                            <h3 className="text-xl font-semibold mb-3">
-                                Camion Plateau 3.5T
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                Location de camion plateau pour transport de matériaux.
-                            </p>
-                            <Link href="#" className="inline-flex items-center bg-blue-600 text-white p-3 rounded-3xl hover:bg-blue-800">
-                                LIRE PLUS
-                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </Link>
-                        </div>
+                </div>
+            </div>
+            <div className="flex flex-row- justify-between bg-gray-400 items-center m-3">
+                <img src="https://i.pinimg.com/736x/54/1c/91/541c91db81c3a1b265064188c9f1e448.jpg" alt="transportpicture" className="w-1/2"/>
+                <div className="flex flex-col justify-start items-start p-6">
+                    <div className="text-2xl font-bold">Transport dédié </div>
+                    <div className="text-sm">Option permettant de dédier un camion exclusivement aux marchandises d’un client pour garantir la sécurité et minimiser les risques de mélange de cargaisons.</div>
+                    <div>
+                        <Link href="/transport-marchandises">
+                            <button className="bg-black text-white px-4 py-2 rounded-lg">Je souhaite une estimation</button>
+                        </Link>
                     </div>
-
-                    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <div className="relative h-48">
-                            <Image
-                                src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg"
-                                alt="Camion Frigorifique"
-                                width={400}
-                                height={300}
-                                className="object-cover w-full h-full"
-                                unoptimized
-                            />
-                        </div>
-                        <div className="p-6">
-                            
-                            <h3 className="text-xl font-semibold mb-3">
-                                Camion Frigorifique
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                                Location de camion frigorifique pour vos produits frais.
-                            </p>
-                            <Link href="#" className="inline-flex items-center bg-blue-600 text-white p-3 rounded-3xl hover:bg-blue-800">
-                                LIRE PLUS
-                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
-                            </Link>
-                        </div>
+                </div>
+            </div>
+            <div className="flex flex-row-reverse justify-between bg-gray-400 items-center m-3">
+                <img src="https://i.pinimg.com/736x/1b/c9/f8/1bc9f81dcdbf01c665801c42a5fbadd1.jpg" alt="transportpicture" className="w-1/2"/>
+                <div className="flex flex-col justify-start items-start p-6">
+                    <div className="text-2xl font-bold">Transport groupé </div>
+                    <div className="text-sm">Possibilité pour les clients de partager un camion pour réduire les coûts, particulièrement adapté pour les petites entreprises.</div>
+                    <div>
+                        <Link href="/transport-marchandises">
+                            <button className="bg-black text-white px-4 py-2 rounded-lg">Je souhaite une estimation</button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-row justify-between bg-gray-400 items-center m-3">
+                <img src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg" alt="transportpicture" className="w-1/2"/>
+                <div className="flex flex-col justify-start items-start p-6">
+                    <div className="text-2xl font-bold">Service de manutention </div>
+                    <div className="text-sm">Équipe qualifiée pour charger et décharger les marchandises en toute sécurité.</div>
+                    <div>
+                        <Link href="/transport-marchandises">
+                            <button className="bg-black text-white px-4 py-2 rounded-lg">Je souhaite une estimation</button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-row-reverse justify-between bg-gray-400 items-center m-3">
+                <img src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg" alt="transportpicture" className="w-1/2"/>
+                <div className="flex flex-col justify-start items-start p-6">
+                    <div className="text-2xl font-bold">Stockage temporaire </div>
+                    <div className="text-sm">Solution pour les clients ayant besoin d'entreposer temporairement leurs marchandises avant la livraison finale.</div>
+                    <div>
+                        <Link href="/transport-marchandises">
+                            <button className="bg-black text-white px-4 py-2 rounded-lg">Je souhaite une estimation</button>
+                        </Link>
                     </div>
                 </div>
             </div>
