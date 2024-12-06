@@ -6,7 +6,7 @@ export default function Searchbar1() {
             <div className="max-w-4xl mx-auto space-y-6">
                 {/* Titre */}
                 <h1 className="text-black font-mono text-5xl text-center mb-6">
-                    Camions
+                    Transport de marchandises
                 </h1>
                 
                 {/* Barre de recherche */}
@@ -21,7 +21,7 @@ export default function Searchbar1() {
                         </div>
                         <input 
                             type="text" 
-                            placeholder="Rechercher un camion..." 
+                            placeholder="Rechercher un véhicule de transport de marchandises..." 
                             className="w-full py-4 pr-4 text-gray-700 bg-transparent outline-none"
                         />
                     </div>
