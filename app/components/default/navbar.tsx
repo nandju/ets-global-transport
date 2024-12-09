@@ -25,6 +25,9 @@ export default function Navbar() {
           <Link href="/travaux-publics" className="hover:underline">
             Travaux Publics
           </Link>
+          <Link href="/contact-us" className="hover:underline">
+            Contactez-nous
+          </Link>
         </div>
         <button className="bg-white text-black p-2 rounded-xl hover:bg-gray-200" onClick={()=>alert('souscription effectué')}>Souscrire</button>
       </div>

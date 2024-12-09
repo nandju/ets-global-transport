@@ -69,7 +69,7 @@ export default function Paiement() {
                             </div>
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
-                                    <label className="block text-sm text-gray-600 mb-1">Date d'Expiration</label>
+                                    <label className="block text-sm text-gray-600 mb-1">Date d&apos;Expiration</label>
                                     <input 
                                         type="text" 
                                         className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
