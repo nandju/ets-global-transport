@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function PublicsWork() {
     return (
-        <div className="container mx-auto px-4 py-12">
+        <div className=" p-10 bg-gray-200">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {/* Bureau d&apos;études */}
                 <div className="relative group h-[300px] w-full overflow-hidden bg-cover bg-center" 
@@ -18,7 +18,7 @@ export default function PublicsWork() {
                         <p className="text-sm mb-4 max-w-[250px]">
                         Travaux de préparation du terrain pour les constructions, incluant le nivellement, le creusage de tranchées, et la mise en forme du terrain.
                         </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
@@ -34,9 +34,9 @@ export default function PublicsWork() {
                     <div className="absolute bottom-8 left-6 text-white">
                         <h3 className="text-2xl font-bold mb-2">Voirie et réseaux divers (VRD)</h3>
                         <p className="text-sm mb-4 max-w-[250px]">
-                        Aménagement de routes, trottoirs, et installation de réseaux de canalisations et d'évacuation.
+                        Aménagement de routes, trottoirs, et installation de réseaux de canalisations et d&apos;évacuation.
                         </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
@@ -52,9 +52,9 @@ export default function PublicsWork() {
                     <div className="absolute bottom-8 left-6 text-white">
                         <h3 className="text-2xl font-bold mb-2">Aménagement paysager</h3>
                         <p className="text-sm mb-4 max-w-[250px]">
-                        Services de préparation des terrains pour des projets de jardins, espaces verts et parcs publics ou privés.
+                            Services de préparation des terrains pour des projets de jardins, espaces verts et parcs publics ou privés.
                         </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
@@ -72,7 +72,7 @@ export default function PublicsWork() {
                         <p className="text-sm mb-4 max-w-[250px]">
                         Services de démolition d’anciennes structures pour préparer le terrain en vue de nouveaux aménagements.
                         </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
@@ -90,7 +90,7 @@ export default function PublicsWork() {
                         <p className="text-sm mb-4 max-w-[250px]">
                         Pelle hydraulique, bulldozer, compacteur, chargeuse, camions-bennes, et autres matériels adaptés aux travaux publics.
                         </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
@@ -107,7 +107,7 @@ export default function PublicsWork() {
                         <h3 className="text-2xl font-bold mb-2">Équipes qualifiées</h3>
                         <p className="text-sm mb-4 max-w-[250px]">
                         Personnel formé et expérimenté pour la réalisation de travaux de terrassement, voirie et autres aménagements.                        </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
@@ -123,7 +123,7 @@ export default function PublicsWork() {
                         <p className="text-sm mb-4 max-w-[250px]">
                         Travaux réalisés en conformité avec les normes de sécurité et de qualité locales et internationales.
                         </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
@@ -137,9 +137,9 @@ export default function PublicsWork() {
                     <div className="absolute bottom-8 left-6 text-white">
                         <h3 className="text-2xl font-bold mb-2">Gestion des déchets</h3>
                         <p className="text-sm mb-4 max-w-[250px]">
-                        Système de gestion des déchets pour s'assurer que les matériaux et débris issus des travaux sont correctement collectés, recyclés, ou éliminés.
+                        Système de gestion des déchets pour s&apos;assurer que les matériaux et débris issus des travaux sont correctement collectés, recyclés, ou éliminés.
                         </p>
-                        <Link href="#" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
+                        <Link href="../travaux-publics/travaux-publics-details" className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-md">
                             En savoir plus
                         </Link>
                     </div>
