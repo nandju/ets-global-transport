@@ -20,7 +20,7 @@ export default function Faq(){
                             className="w-full px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                         />
                         <button className="absolute inset-y-0 right-0 px-4 py-2 bg-blue-500 text-white rounded-r-lg hover:bg-blue-600 transition-colors">
-                            Rechercher
+                            <Link href="/contact-us">Rechercher</Link>
                         </button>
                     </div>
                     
