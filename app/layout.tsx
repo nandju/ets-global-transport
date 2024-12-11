@@ -1,19 +1,29 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import {NextUIProvider} from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/react";
 import Navbar from "@/components/default/navbar";
 import Footer from "@/components/default/footer";
 
-const geistSans = localFont({
-  src: "../public/assets/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+import localFont from "next/font/local";
+import { Roboto, Montserrat } from "next/font/google";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+
 const geistMono = localFont({
   src: "../public/assets/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const roboto = Roboto({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -26,16 +36,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistMono.variable} ${roboto.variable} ${montserrat.variable} antialiased`}
       >
         <NextUIProvider>
-        <Navbar/>
-          {children}
-          <Footer/>
+          <NextThemesProvider attribute="class" defaultTheme="dark">
+            <div className="w-full max-w-screen-2xl mx-auto">
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
+          </NextThemesProvider>
         </NextUIProvider>
       </body>
     </html>

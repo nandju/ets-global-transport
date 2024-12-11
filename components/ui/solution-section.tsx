@@ -3,7 +3,7 @@ import {Button} from "@nextui-org/react";
 
 export default function Solution(){
     return(
-        <div className="flex flex-col justify-around bg-gray-200 p-6">
+        <div className="flex flex-col justify-around bg-background p-6">
             <div className="flex flex-col justify-center gap-2">
                 <div className="font-mono text-5xl font-semibold text-start mx-3">Nos Solutions</div>
                 <div className="flex flex-row justify-between my-4 sm:gap-4 gap-0 lg:gap-4">

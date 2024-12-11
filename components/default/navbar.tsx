@@ -1,15 +1,15 @@
-"use client"
+"use client";
 import Link from "next/link";
+import ThemeSwitcher from "../ui/theme-switcher";
+import { Button } from "@nextui-org/react";
 
 export default function Navbar() {
   return (
-    <nav className="bg-black text-white p-4 shadow-md">
+    <nav className="bg-background text-foreground p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-lg sm:text-2xl lg:text-2xl font-bold font-mono">
-          <Link href="/">
-            ETS Global Transport
-          </Link>
+          <Link href="/">ETS Global Transport</Link>
         </div>
 
         {/* Navigation Links */}
@@ -30,7 +30,8 @@ export default function Navbar() {
             Contactez-nous
           </Link>
         </div>
-        <button className="bg-white text-black p-2 rounded-xl hover:bg-gray-200" onClick={()=> alert('Souscritption effectué')}>Souscrire</button>
+        <ThemeSwitcher />
+        <Button color="primary">Souscrire</Button>
       </div>
     </nav>
   );
