@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Header1(){
     return(
         <div className="relative flex items-center justify-between w-full h-screen">

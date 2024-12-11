@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react"
-import Navbar from "../components/default/navbar";
+import Navbar from "../../components/default/navbar";
 import Searchbar1 from "./components/searchbar1";
-import Footer from "../components/ui/footer";
-import Faq from "../components/ui/faq-section";
+import Footer from "../../components/ui/footer";
+import Faq from "../../components/ui/faq-section";
 import Header1 from "./components/header1";
 import PublicsWork from "./components/publics-work";
 

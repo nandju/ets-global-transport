@@ -67,7 +67,7 @@ export default function TransportItems() {
                 <img src="https://i.pinimg.com/736x/8b/48/8b/8b488b5d716ed5b40406230bc795be90.jpg" alt="transportpicture" className="w-1/2"/>
                 <div className="flex flex-col justify-start items-start p-6">
                     <div className="text-2xl font-bold">Stockage temporaire </div>
-                    <div className="text-sm">Solution pour les clients ayant besoin d'entreposer temporairement leurs marchandises avant la livraison finale.</div>
+                    <div className="text-sm">Solution pour les clients ayant besoin d&apos;entreposer temporairement leurs marchandises avant la livraison finale.</div>
                     <div>
                         <Link href="/transport-marchandises">
                             <button className="bg-black text-white px-4 py-2 rounded-lg">Je souhaite une estimation</button>
