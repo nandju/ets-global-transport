@@ -1,18 +1,19 @@
 import Link from "next/link";
 
+
 export default function Navbar() {
   return (
     <nav className="bg-black text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold font-mono">
+        <div className="text-lg sm:text-2xl lg:text-2xl font-bold font-mono">
           <Link href="/">
             ETS Global Transport
           </Link>
         </div>
 
         {/* Navigation Links */}
-        <div className="space-x-4">
+        <div className="sm:space-x-4 lg:space-x-4 space-x-0 hidden sm:flex lg:flex">
           <Link href="/" className="hover:underline">
             Accueil
           </Link>
@@ -29,7 +30,7 @@ export default function Navbar() {
             Contactez-nous
           </Link>
         </div>
-        <button className="bg-white text-black p-2 rounded-xl hover:bg-gray-200" onClick={()=>alert('souscription effectué')}>Souscrire</button>
+        <button className="bg-white text-black p-2 rounded-xl hover:bg-gray-200" onClick={()=> alert('Souscritption effectué')}>Souscrire</button>
       </div>
     </nav>
   );

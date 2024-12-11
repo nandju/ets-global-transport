@@ -1,4 +1,4 @@
-import Link from "next/link";
+import {Button} from "@nextui-org/react";
 
 export default function Hero(){
     return(
@@ -9,24 +9,25 @@ export default function Hero(){
     alt="herosection"
   />
   <div className="absolute w-full h-screen bg-black/25"></div>
-  <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white text-2xl font-semibold space-y-6">
+  <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white text-xl sm:text-2xl lg:text-2xl font-semibold space-y-6">
     {/* Texte principal */}
     <p>Des services de transport sur mesure pour une logistique sans faille</p>
 
     {/* Bouton bien espacé */}
-    <button className="bg-white text-black px-8 py-3 rounded-xl shadow-lg hover:bg-gray-200 transition">
+    <Button color="primary" className="px-8 py-3 m-2 rounded-xl shadow-lg border-2 hover:bg-gray-200 transition">
       Souscrire nos services
-    </button>
+    </Button>
   </div>
   {/* Bouton gauche */}
-  <div className="absolute left-4 top-1/2 transform -translate-y-1/2 px-6 py-4 text-black bg-white/90 rounded-full shadow-md cursor-pointer hover:bg-gray-200 transition">
+  <div className="absolute hidden sm:flex lg:flex left-4 top-1/2 transform -translate-y-1/2 px-6 py-4 text-black bg-white/90 rounded-full shadow-md cursor-pointer hover:bg-gray-200 transition">
     {"<"}
   </div>
   {/* Bouton droit */}
-  <div className="absolute right-4 top-1/2 transform -translate-y-1/2 px-6 py-4 text-black bg-white/90 rounded-full shadow-md cursor-pointer hover:bg-gray-200 transition">
+  <div className="absolute hidden sm:flex lg:flex right-4 top-1/2 transform -translate-y-1/2 px-6 py-4 text-black bg-white/90 rounded-full shadow-md cursor-pointer hover:bg-gray-200 transition">
     {">"}
   </div>
 </div>
 
     )
 }
+

@@ -1,22 +1,20 @@
-import Link from "next/link";
+import {Button} from "@nextui-org/react";
 
 export default function Advantage(){
     return(
-        <div className="flex flex-col justify-around m-6">
+        <div className="flex flex-col justify-around p-6 bg-gray-200">
             <div className="flex flex-row justify-between gap-2 m-3">
                 <div className="font-mono text-5xl font-semibold text-start mx-3">Avantages</div>
-                <button className="bg-white text-black p-2 rounded-xl border-2 hover:bg-gray-200">
-                    En savoir plus {">"}
-                </button>
+                <Button isDisabled color="danger">En savoir plus {">"}</Button>
             </div>
             
             <div className="flex flex-row gap-6 mt-4 items-stretch">
                 {/* Article principal à gauche */}
                 <div className="flex-1">
                     <div className="bg-white rounded-xl shadow-lg">
-                        <div className="bg-emerald-200 p-4 rounded-t-xl">
+                        <div className="overflow-hidden rounded-t-xl">
                             <img 
-                                className="w-full h-80 object-cover rounded-lg" 
+                                className="w-full h-80 object-cover" 
                                 src="https://groupelaure.fr/images/Diaporama/service-locations-camions-chauffeur.jpg"
                                 alt="Avantages principaux" 
                             />
@@ -28,9 +26,7 @@ export default function Advantage(){
                                 et les travaux publics. Nos solutions sont conçues pour garantir fiabilité, 
                                 sécurité et flexibilité, tout en s&apos;adaptant à vos besoins spécifiques.
                             </p>
-                            <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors">
-                                En savoir plus
-                            </button>
+                            <Button color="primary" className="w-full">En savoir plus</Button>
                         </div>
                     </div>
                 </div>
