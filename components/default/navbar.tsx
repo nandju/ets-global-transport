@@ -1,38 +1,98 @@
 "use client";
+
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Button,
+} from "@nextui-org/react";
+
 import Link from "next/link";
 import ThemeSwitcher from "../ui/theme-switcher";
-import { Button } from "@nextui-org/react";
+import Image from "next/image";
+import { useState } from "react";
 
-export default function Navbar() {
+type Items = {
+  label: string;
+  href: string;
+};
+const items: Items[] = [
+  {
+    label: "Accueil",
+    href: "/",
+  },
+  {
+    label: "Location de Camion",
+    href: "/location-camions",
+  },
+  {
+    label: "Transport de Marchandises",
+    href: "/transport-marchandises",
+  },
+  {
+    label: "Travaux Publics",
+    href: "/travaux-publics",
+  },
+  {
+    label: "Contactez-nous",
+    href: "/contact-us",
+  },
+];
+
+export default function NavbarComponent() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="bg-background text-foreground p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-lg sm:text-2xl lg:text-2xl font-bold font-mono">
-          <Link href="/">ETS Global Transport</Link>
-        </div>
+    <Navbar maxWidth="2xl" onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="lg:hidden"
+        />
+        <NavbarBrand>
+          <Image
+            src="/assets/images/logo.jpg"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        </NavbarBrand>
+      </NavbarContent>
 
-        {/* Navigation Links */}
-        <div className="sm:space-x-4 lg:space-x-4 space-x-0 hidden sm:flex lg:flex">
-          <Link href="/" className="hover:underline">
-            Accueil
-          </Link>
-          <Link href="/location-camions" className="hover:underline">
-            Location de Camion
-          </Link>
-          <Link href="/transport-marchandises" className="hover:underline">
-            Transport de Marchandises
-          </Link>
-          <Link href="/travaux-publics" className="hover:underline">
-            Travaux Publics
-          </Link>
-          <Link href="/contact-us" className="hover:underline">
-            Contactez-nous
-          </Link>
-        </div>
+      <NavbarContent className="hidden lg:flex gap-4" justify="center">
+        {items.map((item) => {
+          return (
+            <NavbarItem key={item.href} className="hover:underline">
+              <Link color="foreground" href={item.href}>
+                {item.label}
+              </Link>
+            </NavbarItem>
+          );
+        })}
+      </NavbarContent>
+
+      <NavbarContent justify="end">
         <ThemeSwitcher />
         <Button color="primary">Souscrire</Button>
-      </div>
-    </nav>
+      </NavbarContent>
+
+      {/* Mobile Menu */}
+
+      <NavbarMenu>
+        {items.map((item) => {
+          return (
+            <NavbarMenuItem key={item.href} className="hover:underline bg-background p-2 text-center ">
+              <Link color="foreground" href={item.href}>
+                {item.label}
+              </Link>
+            </NavbarMenuItem>
+          );
+        })}
+      </NavbarMenu>
+    </Navbar>
   );
 }
