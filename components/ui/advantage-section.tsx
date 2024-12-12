@@ -2,13 +2,13 @@ import {Button} from "@nextui-org/react";
 
 export default function Advantage(){
     return(
-        <div className="flex flex-col justify-around p-6 bg-gray-200">
-            <div className="flex flex-row justify-between gap-2 m-3">
-                <div className="font-mono text-5xl font-semibold text-start mx-3">Avantages</div>
-                <Button isDisabled color="danger">En savoir plus {">"}</Button>
+        <div className="flex flex-col justify-around p-6">
+            <div className="flex flex-row justify-center md:justify-start gap-2 m-3">
+                <div className="text-5xl font-semibold text-start m-0 md:mx-3">Avantages</div>
+                <Button isDisabled color="danger" className="hidden md:block">En savoir plus {">"}</Button>
             </div>
             
-            <div className="flex flex-row gap-6 mt-4 items-stretch">
+            <div className="flex flex-col md:flex-row gap-6 mt-4 items-stretch">
                 {/* Article principal à gauche */}
                 <div className="flex-1">
                     <div className="bg-white rounded-xl shadow-lg">

@@ -74,7 +74,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-montserrat)", "var(--font-roboto)", "Arial"],
+        sans: ["var(--font-montserrat)", "var(--font-open-sans)", "var(--font-roboto)", "Arial"],
         mono: ["var(--font-geist-mono)", "var(--font-roboto)", "Arial"],
       },
       spacing: {

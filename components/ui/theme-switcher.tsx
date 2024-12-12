@@ -18,9 +18,10 @@ export default function ThemeSwitcher() {
   return (
     <>
       {theme == "dark" ? (
-        <Sun onClick={() => setTheme("light")} />
+        <div className="rounded-full p-1 border-2 border-foreground"><Sun onClick={() => setTheme("light")} /></div>
+        
       ) : (
-        <Moon onClick={() => setTheme("dark")} />
+        <div className="rounded-full p-1 border-2 border-foreground"><Moon onClick={() => setTheme("dark")} /></div>
       )}
     </>
   );
