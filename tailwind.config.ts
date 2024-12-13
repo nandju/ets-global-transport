@@ -208,6 +208,7 @@ export default {
   			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
   			'caret-blink': 'caret-blink 1.25s ease-out infinite'
   		}
+		
   	}
   },
   darkMode: ["class", "class"],
