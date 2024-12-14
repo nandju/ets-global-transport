@@ -9,7 +9,7 @@ export default function Testimonial(){
                 <div className="text-gray-600 text-sm">Des résultats qui témoignent de notre engagement et de notre <br /> expertise dans le secteur du transport et des travaux publics.</div>
                 <Button color="primary" className="py-2 px-4">En savoir plus</Button>
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-8">
+            <div className="flex flex-col md:grid md:grid-cols-2 pt-6 gap-8">
                 <div className="flex flex-col justify-center text-primary text-center bg-white scale-105 cursor-pointer rounded-lg p-8">
                     <div className="text-2xl font-semibold"><span className="text-primary">+</span> <NumberTicker value={500} /></div>
                     <div className="text-sm">projets réalisés</div>
