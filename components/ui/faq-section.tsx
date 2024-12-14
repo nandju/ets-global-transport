@@ -7,7 +7,7 @@ export default function Faq(){
     return(
         <div className="flex flex-col justify-around p-6 bg-red-500/10">
             <div className="flex flex-row justify-center gap-2 m-3">
-                <div className="font-mono text-5xl font-semibold text-center mx-3">
+                <div className="text-5xl font-semibold text-center mx-3">
                     Questions Fréquemment Posées (FAQ)
                 </div>
             </div>

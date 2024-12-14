@@ -1,7 +1,7 @@
 import CardBody from "./cardbody";
 export default function Advantage(){
     return(
-        <div className="flex flex-col justify-around p-6">
+        <div className="flex flex-col justify-around p-10 mt-10">
             <div className="flex flex-row justify-center md:justify-start gap-2 m-3">
                 <div className="text-5xl font-semibold text-start m-0 md:mx-3">Les Avantages</div>
             </div>

@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Footer(){
     return(
         <div className="flex flex-col bg-black text-white p-6 gap-8">
-            <div className="flex flex-row justify-between gap-12 border-b border-gray-700 pb-8">
+            <div className="flex flex-row justify-stretch gap-12 border-b border-gray-700 pb-8">
                 {/* Section Logo et Description */}
                 <div className="flex flex-col gap-4 max-w-md">
-                    <div className="text-3xl font-bold font-mono">
+                    <div className="text-lg md:text-3xl font-bold">
                         <Link href="/" className="hover:text-gray-300 transition-colors">
                             ETS Global Transport
                         </Link>
@@ -18,7 +18,7 @@ export default function Footer(){
                 </div>
 
                 {/* Section Services */}
-                <div className="flex flex-col gap-3">
+                <div className="hidden md:flex md:flex-col gap-3">
                     <h3 className="text-lg font-semibold mb-2">Nos Services</h3>
                     <Link href="/location-camions" className="text-gray-400 hover:text-white transition-colors">
                         Location de camion
@@ -32,7 +32,7 @@ export default function Footer(){
                 </div>
 
                 {/* Section Contact */}
-                <div className="flex flex-col gap-4">
+                <div className="hidden md:flex md:flex-col gap-4">
                     <h3 className="text-lg font-semibold mb-2">Contact</h3>
                     <div className="flex flex-col gap-3 text-gray-400">
                         <div className="flex flex-col">
@@ -58,7 +58,7 @@ export default function Footer(){
                 {/* Section Réseaux Sociaux */}
                 <div className="flex flex-col gap-4">
                     <h3 className="text-lg font-semibold mb-2">Suivez-nous</h3>
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap md:flex-col gap-4 items-center">
                         <Link href="/" className="hover:opacity-80 transition-opacity">
                             <img 
                                 src="https://i.pinimg.com/736x/16/b8/22/16b82240a640db6fb6c18297fc1dcfd3.jpg" 
