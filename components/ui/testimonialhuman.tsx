@@ -5,19 +5,19 @@ const reviews = [
   {
     name: "Alice Zadi",
     username: "DG",
-    body: "Les équipes de GLOBAL TRANSPORT soutiennent nos rêves les plus grands et nous aident à les concrétiser. À tous niveaux, c'est une relation d'une valeur inestimable. ",
+    body: "Ce qui me plaît le plus chez GLOBALTRANSPORT, c’est de contribuer à la réalisation de défis logistiques à l’échelle internationale.",
     img: "https://avatar.vercel.sh/jack",
   },
   {
     name: "Tano Arnaud",
     username: "Ceo & Founder",
-    body: "GLOBAL TRANSPORT est hautement très bien! Toute l’équipe est allée au-delà pour m’aider à résoudre mon problème. Je recommande vivement GLOBALTRANSPORT.",
+    body: "Les équipes de GLOBAL TRANSPORT soutiennent nos rêves les plus grands et nous aident à les concrétiser. À tous niveaux, c'est une relation d'une valeur inestimable.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
     name: "Sara Konan",
     username: "PCA",
-    body: "Ce qui me plait le plus chez GLOBALTRANSPORT, c’est de contribuer à la réalisation de défis logistiques à l’échelle internationale. ",
+    body: "GLOBAL TRANSPORT est hautement très bien ! Toute l’équipe est allée au-delà pour m’aider à résoudre mon problème. Je recommande vivement GLOBALTRANSPORT.",
     img: "https://avatar.vercel.sh/john",
   },
   {
