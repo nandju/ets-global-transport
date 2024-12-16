@@ -81,13 +81,13 @@ const ReviewCard = ({
 
 export function MarqueeDemo() {
   return (
-    <section className="py-16 px-4 md:px-8 dark:from-gray-900 dark:to-gray-800">
+    <section className="py-24 px-6 md:px-8 bg-muted">
       <div className="max-w-7xl mx-auto">
-        <div className="text-start mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+        <div className="text-start px-14 mb-12">
+          <h2 className="text-5xl md:text-4xl lg:text-5xl font-bold mb-4">
             Témoignages
           </h2>
-          <p className="text-lg max-w-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl max-w-2xl">
             Découvrez ce que nos clients disent de nos services
           </p>
         </div>

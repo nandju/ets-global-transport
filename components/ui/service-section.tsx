@@ -10,7 +10,7 @@ export default function Services() {
           Nos Services
         </div>
         <div className="flex flex-row justify-between my-4 sm:gap-4 gap-0 lg:gap-4">
-          <div className="font-bold text-xl sm:my-2 my-0 lg:my-2">
+          <div className="text-xl sm:my-2 my-0 lg:my-2">
             Découvrez une gamme complète de services adaptés à vos besoins
           </div>
           <Button variant="bordered" color="primary" className="mt-4">
