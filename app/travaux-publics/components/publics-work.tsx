@@ -9,9 +9,6 @@ type PublicsWork = {
     link:string;
 }
 
-const publicsWork: PublicsWork[] = [
-    
-]
 
 export default function PublicsWork() {
     return (
