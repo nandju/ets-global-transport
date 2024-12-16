@@ -2,9 +2,20 @@
 
 import Link from "next/link";
 
+type PublicsWork = {
+    picture:string;
+    title:string;
+    subtitle:string;
+    link:string;
+}
+
+const publicsWork: PublicsWork[] = [
+    
+]
+
 export default function PublicsWork() {
     return (
-        <div className=" p-10 bg-gray-200">
+        <div className=" p-16 bg-muted">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {/* Bureau d&apos;études */}
                 <div className="relative group h-[300px] w-full overflow-hidden bg-cover bg-center" 
