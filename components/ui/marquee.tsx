@@ -8,6 +8,7 @@ interface MarqueeProps extends HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
   vertical?: boolean;
   repeat?: number;
+  [key: string]: unknown;
 }
 
 export default function Marquee({
