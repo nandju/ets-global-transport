@@ -3,7 +3,7 @@ export default function Header1(){
         <div className="relative flex items-center justify-between w-full h-screen">
   <img
     className="absolute inset-0 w-full h-full object-cover shrink-0"
-    src="https://i.pinimg.com/736x/54/1c/91/541c91db81c3a1b265064188c9f1e448.jpg"
+    src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     alt="herosection"
   />
   <div className="absolute w-full h-screen bg-black/25"></div>

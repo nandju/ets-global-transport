@@ -71,7 +71,7 @@ const camions: Camion[] = [
 ];
 export default function CamionsSection() {
   return (
-    <div className="flex flex-col justify-around bg-red-500/10 p-6 lg:p-20">
+    <div className="flex flex-col justify-around bg-muted p-6 lg:p-20">
       <div className="flex flex-col justify-center gap-2">
         <div className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center md:text-start mx-3">
           Nos Camions

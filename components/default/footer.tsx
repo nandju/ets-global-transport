@@ -1,12 +1,14 @@
 import Link from "next/link";
+import { Facebook, Linkedin, Instagram } from "lucide-react";
+
 
 export default function Footer(){
     return(
-        <div className="flex flex-col bg-black text-white p-6 gap-8">
-            <div className="flex flex-row justify-between gap-12 border-b border-gray-700 pb-8">
+        <div className="flex flex-col bg-primary text-white p-6 gap-8">
+            <div className="flex flex-row justify-stretch gap-12 border-b border-gray-700 pb-8">
                 {/* Section Logo et Description */}
                 <div className="flex flex-col gap-4 max-w-md">
-                    <div className="text-3xl font-bold font-mono">
+                    <div className="text-lg md:text-3xl font-bold">
                         <Link href="/" className="hover:text-gray-300 transition-colors">
                             ETS Global Transport
                         </Link>
@@ -18,7 +20,7 @@ export default function Footer(){
                 </div>
 
                 {/* Section Services */}
-                <div className="flex flex-col gap-3">
+                <div className="hidden md:flex md:flex-col gap-3">
                     <h3 className="text-lg font-semibold mb-2">Nos Services</h3>
                     <Link href="/location-camions" className="text-gray-400 hover:text-white transition-colors">
                         Location de camion
@@ -32,7 +34,7 @@ export default function Footer(){
                 </div>
 
                 {/* Section Contact */}
-                <div className="flex flex-col gap-4">
+                <div className="hidden md:flex md:flex-col gap-4">
                     <h3 className="text-lg font-semibold mb-2">Contact</h3>
                     <div className="flex flex-col gap-3 text-gray-400">
                         <div className="flex flex-col">
@@ -58,27 +60,15 @@ export default function Footer(){
                 {/* Section Réseaux Sociaux */}
                 <div className="flex flex-col gap-4">
                     <h3 className="text-lg font-semibold mb-2">Suivez-nous</h3>
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap md:flex-col gap-4 items-center">
                         <Link href="/" className="hover:opacity-80 transition-opacity">
-                            <img 
-                                src="https://i.pinimg.com/736x/16/b8/22/16b82240a640db6fb6c18297fc1dcfd3.jpg" 
-                                alt="facebook" 
-                                className="w-6 h-6"
-                            />
+                            <Facebook className="w-6 h-6 text-blue-600 hover:text-blue-800" />
                         </Link>
                         <Link href="/" className="hover:opacity-80 transition-opacity">
-                            <img 
-                                src="https://i.pinimg.com/736x/60/0f/0b/600f0bac329e4178179987f4d87fcfab.jpg" 
-                                alt="linkedin" 
-                                className="w-6 h-6"
-                            />
+                            <Linkedin className="w-6 h-6 text-blue-700 hover:text-blue-900" />
                         </Link>
                         <Link href="/" className="hover:opacity-80 transition-opacity">
-                            <img 
-                                src="https://i.pinimg.com/736x/cd/da/26/cdda26fe0f0ef1638c394ead911ec6ad.jpg" 
-                                alt="instagram" 
-                                className="w-6 h-6"
-                            />
+                            <Instagram className="w-6 h-6 text-pink-500 hover:text-pink-700" />
                         </Link>
                     </div>
                 </div>

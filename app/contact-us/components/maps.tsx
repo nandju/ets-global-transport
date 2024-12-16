@@ -9,7 +9,7 @@ export default function Maps() {
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0 my-4 rounded-full"
+                className="absolute inset-0 my-4"
             />
         </div>
     )

@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function Faq(){
     return(
-        <div className="flex flex-col justify-around p-6 bg-gray-200">
+        <div className="flex flex-col justify-around px-6 py-24 bg-muted">
             <div className="flex flex-row justify-center gap-2 m-3">
-                <div className="font-mono text-5xl font-semibold text-center mx-3">
+                <div className="text-5xl font-semibold text-center mx-3">
                     Questions Fréquemment Posées (FAQ)
                 </div>
             </div>
