@@ -70,7 +70,7 @@ export default function TransportItems() {
                     key={item.title}
                     className={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse" } justify-between items-center m-8 bg-primary-foreground rounded-xl shadow-xl`}>
                     <Image
-                        isBlurred
+                        isZoomed
                         alt={item.title}
                         className="m-5"
                         src={item.picture}
