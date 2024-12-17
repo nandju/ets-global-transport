@@ -127,7 +127,7 @@ export default function CamionsProducts() {
             }}
             className="absolute w-full"
           >
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500">
+            <div className="bg-muted rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500">
               {/* Section Image et Texte */}
               <div className="flex flex-col lg:flex-row items-center justify-between p-8 lg:p-16">
                 {/* Conteneur image TRES GRAND */}
@@ -158,7 +158,7 @@ export default function CamionsProducts() {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
-                    className="text-lg lg:text-xl text-gray-700 mb-10 leading-relaxed"
+                    className="text-lg lg:text-xl text-foreground mb-10 leading-relaxed"
                   >
                     {currentTruck.subtitle}
                   </motion.p>
