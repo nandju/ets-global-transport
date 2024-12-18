@@ -2,7 +2,7 @@ import { Button } from "@nextui-org/react";
 
 export default function Header1(){
     return(
-        <div className="hidden md:block relative flex items-center justify-between w-full h-screen">
+        <div className="hidden md:block relative flex items-center justify-between w-full h-[calc(100vh-100px)]">
   <img
     className="absolute inset-0 w-full h-full object-cover shrink-0"
     src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

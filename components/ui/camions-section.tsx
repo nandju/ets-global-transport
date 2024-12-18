@@ -40,34 +40,7 @@ const camions: Camion[] = [
       "Manutention et transport de charges lourdes avec capacité de levage jusqu'à 50 tonnes",
     link: "#",
   },
-  {
-    picture:
-      "https://i.pinimg.com/736x/69/e4/68/69e468c3b656a8711a1e381a786885d8.jpg",
-    title: "Transport national et régional",
-    subtitle: "Livraison en Côte d'Ivoire et pays voisins",
-    link: "#",
-  },
-  {
-    picture:
-      "https://i.pinimg.com/736x/c2/09/8b/c2098bbe658dd4d3ffea9133f4b6ec10.jpg",
-    title: "Transport express",
-    subtitle: "Livraison rapide pour produits frais ou de valeur",
-    link: "#",
-  },
-  {
-    picture:
-      "https://i.pinimg.com/736x/54/1c/91/541c91db81c3a1b265064188c9f1e448.jpg",
-    title: "Transport dédié",
-    subtitle: "Camion réservé à un seul client pour plus de sécurité",
-    link: "#",
-  },
-  {
-    picture:
-      "https://i.pinimg.com/736x/1b/c9/f8/1bc9f81dcdbf01c665801c42a5fbadd1.jpg",
-    title: "Transport groupé",
-    subtitle: "Partage de camion pour réduire les coûts",
-    link: "#",
-  },
+  
 ];
 export default function CamionsSection() {
   return (

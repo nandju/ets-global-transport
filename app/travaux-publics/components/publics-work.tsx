@@ -81,7 +81,7 @@ export default function PublicsWork() {
                         </p>
                         <Button color="primary" variant="shadow">
                             <Link href={item.link}>
-                                En savoir plus
+                                Payer
                             </Link>
                         </Button>
                     </div>

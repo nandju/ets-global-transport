@@ -21,23 +21,24 @@ const reviews = [
     img: "https://avatar.vercel.sh/john",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Kouakou Kouakou",
+    username: "Responsable Logistique",
+    body: "Grâce à ETS Global Transport, nous avons pu optimiser notre chaîne logistique et respecter nos délais de livraison.",
     img: "https://avatar.vercel.sh/jane",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Loukou Emmanuella",
+    username: "Directrice des Achats",
+    body: "La qualité du service et la fiabilité des camions sont irréprochables. Une collaboration de confiance.",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Souleymane Ibrahima",
+    username: "Chef de Projet BTP",
+    body: "Les solutions de transport adaptées aux travaux publics ont été essentielles pour la réussite de nos chantiers.",
     img: "https://avatar.vercel.sh/james",
   },
+  
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
