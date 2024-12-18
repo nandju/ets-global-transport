@@ -1,4 +1,4 @@
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button, Link} from "@nextui-org/react";
 
 export default function DropdownUI() {
   return (
@@ -7,9 +7,21 @@ export default function DropdownUI() {
         <Button color="primary">Souscrire</Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions" variant="faded">
-        <DropdownItem key="new">Location de Camions</DropdownItem>
-        <DropdownItem key="copy">Transport de Marchandises</DropdownItem>
-        <DropdownItem key="edit">Travaux Publics</DropdownItem>
+        <DropdownItem key="new">
+            <Link href="/location-camions">
+                Location de Camions
+            </Link>
+        </DropdownItem>
+        <DropdownItem key="copy">
+            <Link href="/transport-marchandises">
+                Transport de Marchandises
+            </Link>
+        </DropdownItem>
+            <DropdownItem key="edit">
+            <Link href="/travaux-publics">
+                Travaux Publics
+            </Link>
+        </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );
