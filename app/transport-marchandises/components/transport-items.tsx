@@ -68,7 +68,7 @@ export default function TransportItems() {
                 {transportItems.map((item, index) => (
                 <div
                     key={item.title}
-                    className={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse" } justify-between items-center m-8 bg-primary-foreground rounded-xl shadow-xl`}>
+                    className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse" } justify-between items-center m-8 bg-primary-foreground rounded-xl shadow-xl`}>
                     <Image
                         isZoomed
                         alt={item.title}
@@ -84,7 +84,7 @@ export default function TransportItems() {
                         <div>
                             <Link href={item.link}>
                                 <Button color="primary">
-                                    Je souhaite une estimation
+                                    Payer
                                 </Button>
                             </Link>
                         </div>

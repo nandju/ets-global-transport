@@ -1,5 +1,5 @@
-import { Button } from "@nextui-org/react";
-import Link from "next/link";
+import { Button, Link } from "@nextui-org/react";
+
 
 type Camion = {
   picture: string;
@@ -81,7 +81,9 @@ export default function CamionsSection() {
             Découvrez une gamme complète de services adaptés à vos besoins
           </div>
           <Button variant="bordered" color="primary" className="mt-4">
-            En savoir plus {">"}
+            <Link href="/location-camions">
+              En savoir plus {">"}
+            </Link>
           </Button>
         </div>
       </div>
@@ -104,14 +106,6 @@ export default function CamionsSection() {
                   <h2 className="text-xl font-bold mb-2">{camion.title}</h2>
                   <p className="text-foreground">{camion.subtitle}</p>
                 </div>
-                <Button
-                  color="primary"
-                  as={Link}
-                  href={camion.link}
-                  className="w-full"
-                >
-                  En savoir plus
-                </Button>
               </div>
             </div>
           );

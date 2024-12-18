@@ -7,15 +7,15 @@ import {
   NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem,
-  Button,
+  NavbarMenuItem
 } from "@nextui-org/react";
 
 import Link from "next/link";
 import ThemeSwitcher from "../ui/theme-switcher";
 import Image from "next/image";
 import { useState } from "react";
-
+import DropdownUI from "../ui/dropdown";
+  
 type Items = {
   label: string;
   href: string;
@@ -77,7 +77,7 @@ export default function NavbarComponent() {
 
       <NavbarContent justify="end">
         <ThemeSwitcher />
-        <Button color="primary">Souscrire</Button>
+        <DropdownUI />
       </NavbarContent>
 
       {/* Mobile Menu */}
