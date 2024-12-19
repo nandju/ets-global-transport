@@ -1,4 +1,4 @@
-import {Card, CardHeader, CardFooter, Image, Button} from "@nextui-org/react";
+import {Card, CardHeader, CardFooter, Image, Button, Link} from "@nextui-org/react";
 
 export default function CardBody() {
   return (
@@ -74,9 +74,11 @@ export default function CardBody() {
           <p className="text-black text-tiny">Disponible dès maintenant.</p>
           <p className="text-black text-tiny">Contactez-nous pour en savoir plus.</p>
         </div>
+        <Link href="/contact-us">
         <Button className="text-tiny" color="primary" radius="full" size="sm">
-          Contact
+            Contact
         </Button>
+        </Link>
       </CardFooter>
     </Card>
   
@@ -84,7 +86,7 @@ export default function CardBody() {
     <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
         <p className="text-tiny text-white/60 uppercase font-bold">Caniveau Dallot</p>
-        <h4 className="text-white/90 font-medium text-xl">
+        <h4 className="text-black font-medium text-xl">
           Solutions durables pour la gestion des eaux pluviales
         </h4>
       </CardHeader>
@@ -108,7 +110,9 @@ export default function CardBody() {
           </div>
         </div>
         <Button radius="full" size="sm">
-          En savoir plus
+          <Link href="/travaux-publics">
+            En savoir plus
+          </Link>
         </Button>
       </CardFooter>
     </Card>

@@ -27,7 +27,7 @@ export default function Faq(){
                     
                     <div className="text-gray-600 md:text-base text-sm text-center md:text-start">
                         Pour plus d&apos;informations sur la gestion de vos données, consultez notre{" "}
-                        <Link href="/" className="text-blue-500 hover:text-blue-600 underline">
+                        <Link href="/privacy-policy" className="text-blue-500 hover:text-blue-600 underline">
                             politique de confidentialité
                         </Link>
                     </div>

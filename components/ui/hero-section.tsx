@@ -1,5 +1,7 @@
-import { Button } from "@nextui-org/react";
+"use client"
+
 import { WordRotate } from "./wordrotate";
+import DropdownUI from "./dropdown1";
 
 export default function Hero() {
   return (
@@ -17,7 +19,7 @@ export default function Hero() {
         words={["Des services de transport sur mesure pour une logistique sans faille", "Camions variés pour une gestion flexible de vos besoins de transport", "Transport rapide et fiable pour la livraison de vos marchandises", "Solutions efficaces pour vos travaux publics avec un équipement moderne"]} />
 
         {/* Bouton bien espacé */}
-        <Button color="primary">Souscrire nos services</Button>
+        <DropdownUI/>
       </div>
       {/* Bouton gauche */}
       <div className="absolute hidden sm:flex lg:flex left-4 top-1/2 transform -translate-y-1/2 px-6 py-4 text-foreground bg-background rounded-full shadow-md cursor-pointer hover:bg-gray-200 transition">
