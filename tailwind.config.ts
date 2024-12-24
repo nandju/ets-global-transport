@@ -193,6 +193,11 @@ export default {
   				'20%,50%': {
   					opacity: '0'
   				}
+  			},
+  			gradient: {
+  				to: {
+  					backgroundPosition: 'var(--bg-size) 0'
+  				}
   			}
   		},
   		animation: {
@@ -206,9 +211,9 @@ export default {
   			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
   			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
-  			'caret-blink': 'caret-blink 1.25s ease-out infinite'
+  			'caret-blink': 'caret-blink 1.25s ease-out infinite',
+  			gradient: 'gradient 8s linear infinite'
   		}
-		
   	}
   },
   darkMode: ["class"],

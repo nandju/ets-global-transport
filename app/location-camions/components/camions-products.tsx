@@ -16,7 +16,7 @@ export default function CamionsProducts() {
             className="object-contain"
       />
       <Button color="primary" className="absolute bottom-10">
-        En savoir plus
+        Faire une demande
       </Button>
     </div>
 
