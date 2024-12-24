@@ -5,12 +5,14 @@ import Testimonial from "../components/ui/testimonial-section";
 import Faq from "../components/ui/faq-section";
 import CamionsSection from "@/components/ui/camions-section";
 import { MarqueeDemo } from "@/components/ui/testimonialhuman";
+import { Press } from "@/components/ui/partners";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Services />
+      <Press />
       <CamionsSection />
       <Advantage />
       <MarqueeDemo />
