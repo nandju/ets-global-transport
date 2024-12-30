@@ -5,7 +5,7 @@ import Formulaire from "@/components/ui/formulaire";
 
 export default function CamionsProducts1() {
   return(
-    <div className="relative bg-gradient-to-t from-primary to-gray-100 h-[500px] flex items-center justify-center">
+    <div className="relative bg-gradient-to-t from-primary to-gray-100 h-[500px] flex items-center justify-center p-20">
       <div className="absolute top-5 text-dark dark:text-black text-center flex flex-col gap-4">
         <div className="text-3xl">Camions-bennes</div>
         <p className="text-lg">Transport de matériaux lourds avec bennes arrière ou latérales (jusqu&apos;à 30 tonnes)</p>

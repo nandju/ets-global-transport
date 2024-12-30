@@ -69,7 +69,7 @@ export default function NavbarComponent() {
       <NavbarContent className="hidden lg:flex gap-4" justify="center">
         {items.map((item) => {
           return (
-            <NavbarItem key={item.href} className={`hover:underline ${pathname==item.href&&"bg-primary text-white py-1 px-2"}`}>
+            <NavbarItem key={item.href} className={` ${pathname==item.href&&"bg-primary rounded-xl text-white py-1 px-2"}`}>
               <Link color="foreground" href={item.href}>
                 {item.label}
               </Link>

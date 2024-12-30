@@ -6,7 +6,7 @@ import Formulaire from "@/components/ui/formulaire";
 
 export default function CamionsProducts4() {
   return(
-    <div className="relative bg-gradient-to-b from-primary to-gray-100 h-[500px] flex items-center justify-center">
+    <div className="relative bg-gradient-to-b from-primary to-gray-100 h-[500px] flex items-center justify-center p-20">
       <div className="absolute top-5 text-white dark:text-black text-center flex flex-col gap-4">
         <div className="text-3xl">Camions-grues</div>
         <p className="text-lg">Manutention et transport de charges lourdes avec capacité de levage jusqu&apos;à 50 tonnes</p>

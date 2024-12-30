@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import FormulaireTM from "@/components/ui/formulaire-t-m";
 
 export default function Header1(){
     return(
@@ -14,7 +14,7 @@ export default function Header1(){
     <p>ETS Global Transport offre des solutions adaptées pour le transport sécurisé et rapide de vos marchandises, avec une large couverture géographique et des services flexibles.</p>
 
     {/* Bouton bien espacé */}
-    <Button color="primary">Souscrire nos services</Button>
+    <FormulaireTM/>
   </div>
   {/* Bouton gauche */}
   <div className="absolute left-4 top-1/2 transform -translate-y-1/2 px-6 py-4 text-black bg-white/90 rounded-full shadow-md cursor-pointer hover:bg-gray-200 transition">

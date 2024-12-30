@@ -1,5 +1,5 @@
 "use client"
-import {Button} from "@nextui-org/react";
+import AccordionFAQ from "./accordion";
 
 import Link from "next/link";
 
@@ -14,16 +14,7 @@ export default function Faq(){
 
             <div className="rounded-3xl p-6 m-3">
                 <div className="max-w-2xl mx-auto">
-                    <div className="relative mb-4">
-                        <input 
-                            type="text" 
-                            placeholder="Vous avez une question ? Recherchez ici pour trouver des réponses rapides"
-                            className="w-full px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                        />
-                        <Button color="primary" className="absolute h-full right-0 px-4 py-2">
-                            <Link href="/contact-us">Rechercher</Link>
-                        </Button>
-                    </div>
+                    <AccordionFAQ />
                     
                     <div className="text-gray-600 md:text-base text-sm text-center md:text-start">
                         Pour plus d&apos;informations sur la gestion de vos données, consultez notre{" "}
