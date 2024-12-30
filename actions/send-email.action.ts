@@ -9,6 +9,7 @@ export async function sendEmail(formData: FormData) {
   const name = String(formData.get("name"));
   const email = String(formData.get("email"));
   const message = String(formData.get("message"));
+ 
   try {
     const { data, error } = await resend.emails.send({
       from: "ETS-TEST <onboarding@resend.dev>",
