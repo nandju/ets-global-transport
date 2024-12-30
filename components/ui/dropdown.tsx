@@ -8,17 +8,17 @@ export default function DropdownUI() {
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions" variant="faded">
         <DropdownItem key="new">
-            <Link href="/location-camions">
+            <Link href="/location-camions?form=location">
                 Location de Camions
             </Link>
         </DropdownItem>
         <DropdownItem key="copy">
-            <Link href="/transport-marchandises">
+            <Link href="/transport-marchandises?form=transport">
                 Transport de Marchandises
             </Link>
         </DropdownItem>
             <DropdownItem key="edit">
-            <Link href="/travaux-publics">
+            <Link href="/travaux-publics?form=travaux">
                 Travaux Publics
             </Link>
         </DropdownItem>

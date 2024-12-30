@@ -35,7 +35,11 @@ export default function Formulaire() {
               <DrawerBody className="space-y-4">
                 {/* Nom et Prénom */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input label="Nom" placeholder="Entrez votre nom" variant="bordered" />
+                  <Input
+                    label="Nom"
+                    placeholder="Entrez votre nom"
+                    variant="bordered"
+                  />
                   <Input
                     label="Prénom"
                     placeholder="Entrez votre prénom"
