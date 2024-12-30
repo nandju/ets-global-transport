@@ -13,7 +13,7 @@ import {
 export default function FormulaireTM() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const camionsTypes = [
+  const transportTypes = [
     "Transport national et régional",
     "Transport express",
     "Transport dédié",
@@ -67,7 +67,7 @@ export default function FormulaireTM() {
                     Types de Transport Marchandises
                   </label>
                   <div className="grid grid-cols-2 gap-2 mt-2">
-                    {camionsTypes.map((type) => (
+                    {transportTypes.map((type) => (
                       <Checkbox key={type} classNames={{ label: "text-small" }}>
                         {type}
                       </Checkbox>
