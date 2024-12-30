@@ -13,7 +13,7 @@ import {
 export default function FormulaireTP() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const camionsTypes = [
+  const travauxTypes = [
     "Terrassement",
     "Voirie et réseaux divers (VRD)",
     "Aménagement paysager",
@@ -68,7 +68,7 @@ export default function FormulaireTP() {
                     Types de Travaux Publics
                   </label>
                   <div className="grid grid-cols-2 gap-2 mt-2">
-                    {camionsTypes.map((type) => (
+                    {travauxTypes.map((type) => (
                       <Checkbox key={type} classNames={{ label: "text-small" }}>
                         {type}
                       </Checkbox>
