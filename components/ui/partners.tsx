@@ -1,15 +1,41 @@
 import Marquee from "@/components/ui/marquee";
 
-const press = [
-  "TheNewYorkTimes",
-  "TheWashingtonPost",
-  "Forbes",
-  "Bloomberg",
-  "BusinessInsider",
-  "TechCrunch",
-  "TheGuardian",
-  "Wired",
-];
+type Press = {
+  name: string;
+  picture: string;
+};
+
+const press: Press[] = [
+  {
+    name: "Client 1",
+    picture: "assets/images/client-1.png"
+  },
+  {
+    name: "Client 2",
+    picture: "assets/images/client-2.png"
+  },
+  {
+    name: "Client 3",
+    picture: "assets/images/client-3.png"
+  },
+  {
+    name: "Client 4",
+    picture: "assets/images/client-4.png"
+  },
+  {
+    name: "Client 5",
+    picture: "assets/images/client-5.png"
+  },
+  {
+    name: "Client 6",
+    picture: "assets/images/client-6.png"
+  },
+  {
+    name: "Client 7",
+    picture: "assets/images/client-7.png"
+  }
+
+]
 
 export function Press() {
   return (
@@ -28,12 +54,12 @@ export function Press() {
       </div>
           <div className="relative mt-6">
             <Marquee className="max-w-full [--duration:40s]">
-              {press.map((logo, idx) => (
+              {press.map((logo) => (
                 <img
-                  key={idx}
-                  src={`https://cdn.magicui.design/press/${logo}.svg`}
+                  key={logo.name}
+                  src={logo.picture}
                   className="h-10 w-40 px-2 dark:brightness-0 dark:invert"
-                  alt={`logo-${logo}`}
+                  alt={`logo-${logo.name}`}
                 />
               ))}
             </Marquee>

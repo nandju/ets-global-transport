@@ -1,6 +1,5 @@
-import { Button } from "@nextui-org/react";
-import Link from "next/link";
 import {Image} from "@nextui-org/react";
+import FormulaireTM from "@/components/ui/formulaire-t-m";
 
 
 type TransportItem = {
@@ -17,7 +16,7 @@ const transportItems: TransportItem[] = [
       title: "Transport national et régional",
       subtitle:
         "Couverture de la Côte d’Ivoire et des pays voisins pour permettre une plus grande flexibilité dans la livraison des marchandises.",
-      link: "/transport-marchandises",
+      link: "/",
     },
     {
       picture:
@@ -25,7 +24,7 @@ const transportItems: TransportItem[] = [
       title: "Transport express",
       subtitle:
         "Solution dédiée aux marchandises nécessitant une livraison rapide, idéale pour les produits frais ou les marchandises à haute valeur ajoutée",
-      link: "/transport-marchandises",
+      link: "/",
     },
     {
       picture:
@@ -33,7 +32,7 @@ const transportItems: TransportItem[] = [
       title: "Transport dédié",
       subtitle:
         "Option permettant de dédier un camion exclusivement aux marchandises d’un client pour garantir la sécurité et minimiser les risques de mélange de cargaisons.",
-      link: "/transport-marchandises",
+      link: "/",
     },
     {
       picture:
@@ -41,7 +40,7 @@ const transportItems: TransportItem[] = [
       title: "Transport groupé",
       subtitle:
         "Possibilité pour les clients de partager un camion pour réduire les coûts, particulièrement adapté pour les petites entreprises.",
-      link: "/transport-marchandises",
+      link: "/",
     },
     {
       picture:
@@ -49,7 +48,7 @@ const transportItems: TransportItem[] = [
       title: "Service de manutention",
       subtitle:
         "Équipe qualifiée pour charger et décharger les marchandises en toute sécurité.",
-      link: "/transport-marchandises",
+      link: "/",
     },
     {
       picture:
@@ -57,7 +56,7 @@ const transportItems: TransportItem[] = [
       title: "Stockage temporaire",
       subtitle:
         "Solution pour les clients ayant besoin d'entreposer temporairement leurs marchandises avant la livraison finale.",
-      link: "/transport-marchandises",
+      link: "/",
     },
   ];
 
@@ -82,11 +81,7 @@ export default function TransportItems() {
                         <div className="border-b border-gray-300 w-1/2"></div>
                         <div className="text-base md:text-lg">{item.subtitle}</div>
                         <div>
-                            <Link href={item.link}>
-                                <Button color="primary">
-                                    Payer
-                                </Button>
-                            </Link>
+                            <FormulaireTM/>
                         </div>
                     </div>
                 </div>

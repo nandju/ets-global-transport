@@ -3,7 +3,10 @@
 import React from "react"
 import Header1 from "./components/header1";
 import { GridPatternDashed } from "./components/gridpatterndashed";
-import CamionsProducts from "./components/camions-products";
+import CamionsProducts1 from "./components/camions-products1";
+import CamionsProducts2 from "./components/camions-products2";
+import CamionsProducts3 from "./components/camions-products3";
+import CamionsProducts4 from "./components/camions-products4";
 import Faq from "../../components/ui/faq-section";
 
 
@@ -12,7 +15,10 @@ export default function LocationCamion(){
         <div>
             <Header1/>
             <GridPatternDashed/>
-            <CamionsProducts/>
+            <CamionsProducts1/>
+            <CamionsProducts2/>
+            <CamionsProducts3/>
+            <CamionsProducts4/>
             <Faq/>
         </div>
     )

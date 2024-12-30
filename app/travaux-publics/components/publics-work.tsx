@@ -1,8 +1,6 @@
 "use client"
 
-import Link from "next/link";
-
-import { Button } from "@nextui-org/react";
+import FormulaireTP from "@/components/ui/formulaire-t-p";
 
 type PublicsWork = {
     picture: string;
@@ -79,11 +77,7 @@ export default function PublicsWork() {
                         <p className="text-sm mb-4 max-w-[250px]">
                         {item.subtitle}
                         </p>
-                        <Button color="primary" variant="shadow">
-                            <Link href={item.link}>
-                                Payer
-                            </Link>
-                        </Button>
+                        <FormulaireTP/>
                     </div>
                 </div>
                 ))}
