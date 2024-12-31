@@ -3,12 +3,15 @@
 import { EmailTemplate } from "@/emails/email-template";
 import { Resend } from "resend";
 
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(formData: FormData) {
   const name = String(formData.get("name"));
   const email = String(formData.get("email"));
   const message = String(formData.get("message"));
+
+  console.log(process.env.RESEND_API_KEY);
  
   try {
     const { data, error } = await resend.emails.send({
