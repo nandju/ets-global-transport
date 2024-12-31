@@ -1,6 +1,6 @@
 "use server";
 
-import { EmailTemplate } from "@/emails/email-template";
+import { EmailTemplateTP } from "@/emails/email-template-t-p";
 import { Resend } from "resend";
 
 
@@ -8,8 +8,12 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(formData: FormData) {
   const name = String(formData.get("name"));
+  const lastname = String(formData.get("lastname"));
   const email = String(formData.get("email"));
-  const message = String(formData.get("message"));
+  const phone = String(formData.get("phone"));
+  const startDate = String(formData.get("startDate"));
+  const endDate = String(formData.get("endDate"));
+  const travauxTypes = String(formData.get("travauxTypes"));
 
   console.log(process.env.RESEND_API_KEY);
  
@@ -18,7 +22,7 @@ export async function sendEmail(formData: FormData) {
       from: "ETS-TEST <onboarding@resend.dev>",
       to: [email],
       subject: "ETS GLOBAL TRANSPORT",
-      react: EmailTemplate({ name, email, message }),
+      react: EmailTemplateTP({ name, lastname, email, phone, startDate, endDate, travauxTypes }),
     });
 
     if (error) {

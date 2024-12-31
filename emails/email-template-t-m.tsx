@@ -1,15 +1,23 @@
 import React from "react";
 
-interface EmailTemplateProps {
+interface EmailTemplateTMProps {
   name: string;
+  lastname: string;
   email: string;
-  message: string;
+  phone: string;
+  startDate: string;
+  endDate: string;
+  transportTypes: string;
 }
 
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+export const EmailTemplateTM: React.FC<Readonly<EmailTemplateTMProps>> = ({
   name,
+  lastname,
   email,
-  message,
+  phone,
+  startDate,
+  endDate,
+  transportTypes,
 }) => (
   <div>
     <table
@@ -29,14 +37,17 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
         <tr>
           <td align="center" className="p-[40px] text-center">
             <p className="m-0 font-semibold text-white">
-              Merci, mr/mme {name}!
+              Merci, mr/mme {name} {lastname} !
             </p>
             <h1 className="m-0 mt-[4px] font-bold text-white">
-              Nouveau message reçu
+              Votre demande de transport de marchandises a été reçue avec succès
             </h1>
             <p className="m-0 mt-[8px] text-[16px] leading-[24px] text-white">
               De: {email} <br />
-              Message: {message}
+              Téléphone: {phone} <br />
+              Date de début: {startDate} <br />
+              Date de fin: {endDate} <br />
+              Type de transport: {transportTypes} <br />
             </p>
             <a
               href="https://react.email"
